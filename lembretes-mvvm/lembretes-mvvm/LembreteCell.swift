@@ -12,6 +12,7 @@ class LembreteCell: UITableViewCell {
     
     @IBOutlet var tituloLabel: UILabel!
     @IBOutlet var dataLabel: UILabel!
+    @IBOutlet var botaoFeito: UIButton!
     
     var acaoBotaoFeito: AcaoBotaoFeito?
     

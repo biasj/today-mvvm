@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Lista Lembretes View Controller-->
         <scene sceneID="tWc-pr-w2W">
             <objects>
-                <tableViewController id="jhp-Jo-wnz" sceneMemberID="viewController">
+                <tableViewController id="jhp-Jo-wnz" customClass="ListaLembretesViewController" customModule="lembretes_mvvm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="d6L-hl-vfs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,6 +60,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="botaoFeito" destination="5NV-yL-ffV" id="Z00-Hf-hL3"/>
                                     <outlet property="dataLabel" destination="7i9-Ge-lkH" id="u7C-I7-TQj"/>
                                     <outlet property="tituloLabel" destination="1Vk-fh-tax" id="TN4-B0-nzD"/>
                                 </connections>

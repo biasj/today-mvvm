@@ -9,25 +9,27 @@
 /* Begin PBXBuildFile section */
 		85FAFA662766C35000B4967C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FAFA652766C35000B4967C /* AppDelegate.swift */; };
 		85FAFA682766C35000B4967C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FAFA672766C35000B4967C /* SceneDelegate.swift */; };
-		85FAFA6A2766C35000B4967C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FAFA692766C35000B4967C /* ViewController.swift */; };
+		85FAFA6A2766C35000B4967C /* ListaLembretesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FAFA692766C35000B4967C /* ListaLembretesViewController.swift */; };
 		85FAFA6D2766C35000B4967C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FAFA6B2766C35000B4967C /* Main.storyboard */; };
 		85FAFA6F2766C35200B4967C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FAFA6E2766C35200B4967C /* Assets.xcassets */; };
 		85FAFA722766C35200B4967C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FAFA702766C35200B4967C /* LaunchScreen.storyboard */; };
 		85FAFA7A2766C38A00B4967C /* Lembrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FAFA792766C38A00B4967C /* Lembrete.swift */; };
 		85FAFA7E2766D62600B4967C /* LembreteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FAFA7D2766D62600B4967C /* LembreteCell.swift */; };
+		85FAFA802766E3FD00B4967C /* ListaLembretesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FAFA7F2766E3FD00B4967C /* ListaLembretesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		85FAFA622766C35000B4967C /* lembretes-mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lembretes-mvvm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FAFA652766C35000B4967C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85FAFA672766C35000B4967C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85FAFA692766C35000B4967C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85FAFA692766C35000B4967C /* ListaLembretesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaLembretesViewController.swift; sourceTree = "<group>"; };
 		85FAFA6C2766C35000B4967C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85FAFA6E2766C35200B4967C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85FAFA712766C35200B4967C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85FAFA732766C35200B4967C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85FAFA792766C38A00B4967C /* Lembrete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lembrete.swift; sourceTree = "<group>"; };
 		85FAFA7D2766D62600B4967C /* LembreteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LembreteCell.swift; sourceTree = "<group>"; };
+		85FAFA7F2766E3FD00B4967C /* ListaLembretesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaLembretesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +64,14 @@
 			children = (
 				85FAFA652766C35000B4967C /* AppDelegate.swift */,
 				85FAFA672766C35000B4967C /* SceneDelegate.swift */,
-				85FAFA692766C35000B4967C /* ViewController.swift */,
+				85FAFA692766C35000B4967C /* ListaLembretesViewController.swift */,
 				85FAFA6B2766C35000B4967C /* Main.storyboard */,
 				85FAFA6E2766C35200B4967C /* Assets.xcassets */,
 				85FAFA702766C35200B4967C /* LaunchScreen.storyboard */,
 				85FAFA732766C35200B4967C /* Info.plist */,
 				85FAFA792766C38A00B4967C /* Lembrete.swift */,
 				85FAFA7D2766D62600B4967C /* LembreteCell.swift */,
+				85FAFA7F2766E3FD00B4967C /* ListaLembretesViewModel.swift */,
 			);
 			path = "lembretes-mvvm";
 			sourceTree = "<group>";
@@ -143,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85FAFA6A2766C35000B4967C /* ViewController.swift in Sources */,
+				85FAFA6A2766C35000B4967C /* ListaLembretesViewController.swift in Sources */,
 				85FAFA7A2766C38A00B4967C /* Lembrete.swift in Sources */,
+				85FAFA802766E3FD00B4967C /* ListaLembretesViewModel.swift in Sources */,
 				85FAFA662766C35000B4967C /* AppDelegate.swift in Sources */,
 				85FAFA7E2766D62600B4967C /* LembreteCell.swift in Sources */,
 				85FAFA682766C35000B4967C /* SceneDelegate.swift in Sources */,
