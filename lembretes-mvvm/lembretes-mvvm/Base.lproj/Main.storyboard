@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jhp-Jo-wnz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7fj-g8-jWg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -16,11 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LembreteCell" rowHeight="99" id="AoU-SI-L8t" customClass="LembreteCell" customModule="lembretes_mvvm" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LembreteCell" rowHeight="99" id="AoU-SI-L8t" customClass="LembreteCell" customModule="lembretes_mvvm" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="99"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AoU-SI-L8t" id="AIW-RR-gm9">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NV-yL-ffV">
@@ -63,6 +63,7 @@
                                     <outlet property="botaoFeito" destination="5NV-yL-ffV" id="Z00-Hf-hL3"/>
                                     <outlet property="dataLabel" destination="7i9-Ge-lkH" id="u7C-I7-TQj"/>
                                     <outlet property="tituloLabel" destination="1Vk-fh-tax" id="TN4-B0-nzD"/>
+                                    <segue destination="dRD-VJ-Lcg" kind="show" identifier="DetalheLembreteSegue" id="wvy-R2-Trw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -71,10 +72,67 @@
                             <outlet property="delegate" destination="jhp-Jo-wnz" id="pwa-Oz-Erq"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="m9C-eQ-C7r"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xo9-Au-mTK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-865" y="-147"/>
+            <point key="canvasLocation" x="44.927536231884062" y="-147.32142857142856"/>
+        </scene>
+        <!--Detalhe Lembrete-->
+        <scene sceneID="947-Dj-dIf">
+            <objects>
+                <tableViewController id="dRD-VJ-Lcg" customClass="DetalheLembreteViewController" customModule="lembretes_mvvm" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2rj-2L-gYT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetalheLembreteCell" textLabel="LtV-93-8vb" style="IBUITableViewCellStyleDefault" id="dUX-IC-JcK">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dUX-IC-JcK" id="sn3-O4-6dL">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LtV-93-8vb">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dRD-VJ-Lcg" id="6FB-cd-8Vu"/>
+                            <outlet property="delegate" destination="dRD-VJ-Lcg" id="Hl5-xH-lN5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Detalhe Lembrete" id="JOT-b8-PSn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEn-hs-A9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="-147"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x2n-Vv-Cos">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7fj-g8-jWg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dgn-ZY-jqO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jhp-Jo-wnz" kind="relationship" relationship="rootViewController" id="hlf-yK-enm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bax-jR-1w9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-865.21739130434787" y="-147.32142857142856"/>
         </scene>
     </scenes>
     <resources>
