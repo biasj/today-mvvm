@@ -25,4 +25,8 @@ final class LembreteCellViewModel {
     func notas() -> String? {
         return lembrete.notas
     }
+    
+    func tarefaFeita() -> Bool {
+        return lembrete.foiFeito
+    }
 }
